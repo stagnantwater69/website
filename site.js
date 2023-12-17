@@ -146,19 +146,13 @@ previewBox.forEach(close =>{
             cartItemsElement.style.display = cartItemsElement.style.display === 'none' ? 'block' : 'none';
         }
 
-        /*function saveCartToStorage() {
+        function saveCartToStorage() {
             localStorage.setItem('cart', JSON.stringify(cart));
         }
 
         function loadCartFromStorage() {
             const storedCart = localStorage.getItem('cart');
             cart = storedCart ? JSON.parse(storedCart) : [];
-        }*/
-        
-        function removeAllFromCart() {
-            cart = [];
-            total = 0;
-            updateCartDisplay();
-            saveCartToStorage();
         }
+        
        
